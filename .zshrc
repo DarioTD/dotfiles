@@ -19,7 +19,7 @@ export EDITOR="vim"
 export PATH="${PATH}:/home/d/.scripts"
 
 # Aliases
-alias gitdotfile='/usr/bin/git --git-dir=/home/d/.dotfiles.git/ --work-tree=/home/d'
+alias gitdotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 alias ls='ls --color=always -Ah --group-directories-first'
 alias diff='diff --color=always'
 alias p='sudo pacman'
