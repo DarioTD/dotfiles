@@ -25,7 +25,7 @@ alias diff='diff --color=always'
 alias p='sudo pacman'
 
 #PROMPT='%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%~%b%f %# '
-PROMPT='%F{blue}%B%~%b%f $ '
+PROMPT='%F{blue}%B%~/%b%f $ '
 RPROMPT='[%F{yellow}%?%f]'
 
 # Adding powerline to zsh
