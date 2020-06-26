@@ -6,7 +6,6 @@
 [[ $- != *i* ]] && return
 
 # Aliases
-alias sudo='doas' # Using doas instead of sudo
 alias gitdotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 alias ls='ls --color=always -Ah --group-directories-first'
 alias diff='diff --color=always'
