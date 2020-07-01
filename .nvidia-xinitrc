@@ -24,6 +24,7 @@ sxhkd &
 #fcitx &
 #picom &
 #dunst &
+lxsession & # authentication agent
 
 $HOME/.scripts/status &
 
