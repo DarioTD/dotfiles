@@ -22,8 +22,6 @@ nitrogen --restore &
 #sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 #fcitx &
-#picom &
-#dunst &
 lxsession & # authentication agent
 
 $HOME/.scripts/status &

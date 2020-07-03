@@ -25,6 +25,7 @@ sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 picom &
 #dunst &
 lxsession & # authentication agent
+#redshift -l 5.07:-75.50 &
 
 $HOME/.scripts/status &
 
