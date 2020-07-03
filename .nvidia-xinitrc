@@ -21,8 +21,6 @@ setxkbmap latam &
 nitrogen --restore &
 #sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
-#fcitx &
-lxsession & # authentication agent
 
 $HOME/.scripts/status &
 
