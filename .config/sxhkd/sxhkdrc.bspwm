@@ -17,10 +17,10 @@ super + Escape
 # Volume controls
 @XF86Audio{RaiseVolume,LowerVolume}
 	pactl set-sink-volume @DEFAULT_SINK@ {+2%,-2%}
-#	amixer set Master {1%+,1%-}
+	#amixer set Master {1%+,1%-}
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
-#	amixer set Master toggle
+	#amixer set Master toggle
 
 # Brightness controls
 @XF86MonBrightness{Up,Down}
@@ -29,12 +29,6 @@ XF86AudioMute
 # Multimedia controls
 XF86Audio{Prev,Next,Play,Stop}
 	mpc -q {prev,next,toggle,stop}
-
-# Chords
-super + b ; {f,c,t}
-	{firefox,chromium,tor-browser}
-super + g ; {o,c,m,s,f}
-	$HOME/.scripts/{osu,minecraft,minecraft-mods,steam,factorio}
 
 #
 # bspwm hotkeys
@@ -58,7 +52,7 @@ super + y
 
 # swap the current node and the biggest node
 #super + g
-#	bspc node -s biggest
+	#bspc node -s biggest
 
 #
 # state/flags
@@ -86,7 +80,7 @@ super + {p,b,comma,period}
 
 # focus the next/previous node in the current desktop
 #super + {_,shift + }c
-#	bspc node -f {next,prev}.local
+	#bspc node -f {next,prev}.local
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
