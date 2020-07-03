@@ -23,7 +23,7 @@ nitrogen --restore &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 #fcitx &
 picom &
-#dunst &
+dunst &
 lxsession & # authentication agent
 #redshift -l 5.07:-75.50 &
 
