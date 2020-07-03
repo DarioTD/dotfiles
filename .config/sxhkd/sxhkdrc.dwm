@@ -1,0 +1,29 @@
+#
+# wm independent hotkeys
+#
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Volume controls
+@XF86Audio{RaiseVolume,LowerVolume}
+	pactl set-sink-volume @DEFAULT_SINK@ {+2%,-2%}
+#	amixer set Master {1%+,1%-}
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+#	amixer set Master toggle
+
+# Brightness controls
+@XF86MonBrightness{Up,Down}
+	brightnessctl set {+2%,+2%-}
+
+# Multimedia controls
+XF86Audio{Prev,Next,Play,Stop}
+	mpc -q {prev,next,toggle,stop}
+
+# Chords
+#super + b ; {f,c,t}
+#	{firefox,chromium,tor-browser}
+#super + g ; {o,c,m,s,f}
+#	$HOME/.scripts/{osu,minecraft,minecraft-mods,steam-wine,factorio}
