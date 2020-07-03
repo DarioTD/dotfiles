@@ -24,7 +24,7 @@ sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 #fcitx &
 picom &
 dunst &
-lxsession & # authentication agent
+lxpolkit & # authentication agent
 #redshift -l 5.07:-75.50 &
 
 $HOME/.scripts/status &
