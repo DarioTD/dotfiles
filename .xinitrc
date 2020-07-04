@@ -13,12 +13,15 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
+export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share/vulkan/icd.d/intel_icd.i686.json
+
 ## Sets display configuration
 xrandr --auto
 
 ## Autostart
 setxkbmap latam &
 nitrogen --restore &
+mpd &
 #sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 #fcitx &
