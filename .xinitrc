@@ -21,7 +21,6 @@ xrandr --auto
 ## Autostart
 setxkbmap latam &
 nitrogen --restore &
-mpd &
 #sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 #fcitx &
