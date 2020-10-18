@@ -24,7 +24,7 @@ nitrogen --restore &
 #sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 
-$HOME/.scripts/status &
+$HOME/.scripts/status_dGPU &
 
 #exec i3
 #exec bspwm

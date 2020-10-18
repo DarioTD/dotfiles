@@ -14,7 +14,7 @@ alias p='sudo pacman'
 #PS1='[\u@\h \W]\$ '
 PS1='\W/ \$ '
 
-$HOME/.scripts/ufetch-arch
+neofetch
 
 # Man colored
 export LESS_TERMCAP_mb=$'\e[1;32m'
@@ -24,6 +24,11 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+# Grep colored
+alias grep='grep --color=always'
+alias egrep='egrep --color=always'
+alias fgrep='fgrep --color=always'
 
 export HISTCONTROL=ignoredups
 set -o vi
