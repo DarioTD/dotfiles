@@ -17,7 +17,7 @@ super + Escape
 # Volume controls
 @XF86Audio{RaiseVolume,LowerVolume}
 	pactl set-sink-volume @DEFAULT_SINK@ {+2%,-2%}
-	#amixer set Master {1%+,1%-}
+	#amixer set Master {2%+,2%-}
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 	#amixer set Master toggle

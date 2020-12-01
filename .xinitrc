@@ -25,7 +25,7 @@ nitrogen --restore &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 #fcitx &
 picom &
-dunst &
+#dunst & # Using D-bus
 lxpolkit & # authentication agent
 #redshift -l 5.07:-75.50 &
 
