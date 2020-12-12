@@ -11,8 +11,8 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
-export LD_LIBRARY_PATH=/usr/lib64/nvidia/:/usr/lib32/nvidia:/usr/lib:${LD_LIBRARY_PATH}
-export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.x86_64.json:/usr/share/vulkan/icd.d/nvidia_icd.i686.json
+#export LD_LIBRARY_PATH=/usr/lib64/nvidia/:/usr/lib32/nvidia:/usr/lib:${LD_LIBRARY_PATH}
+#export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.x86_64.json:/usr/share/vulkan/icd.d/nvidia_icd.i686.json
 #export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
 
 xrandr --setprovideroutputsource modesetting NVIDIA-0
@@ -24,7 +24,8 @@ nitrogen --restore &
 #sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 
-$HOME/.scripts/status_dGPU &
+#$HOME/.scripts/status_dGPU &
+dwmblocks &
 
 #exec i3
 #exec bspwm
