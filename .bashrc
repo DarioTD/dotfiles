@@ -7,14 +7,13 @@
 
 # Aliases
 alias gitdotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
+alias gitrootcfg='/usr/bin/git --git-dir=$HOME/.linuxrootcfg.git/ --work-tree=/'
 alias ls='ls --color=always -Ah --group-directories-first'
 alias diff='diff --color=always'
 alias p='sudo pacman'
 
 #PS1='[\u@\h \W]\$ '
 PS1='\W/ \$ '
-
-neofetch
 
 # Man colored
 export LESS_TERMCAP_mb=$'\e[1;32m'
@@ -29,6 +28,16 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 alias grep='grep --color=always'
 alias egrep='egrep --color=always'
 alias fgrep='fgrep --color=always'
+
+# Java
+export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
+# Qt5
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# Neofetch
+neofetch
 
 export HISTCONTROL=ignoredups
 set -o vi
