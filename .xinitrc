@@ -30,8 +30,8 @@ picom &
 lxpolkit & # authentication agent
 dwmblocks &
 #redshift -l 5.07:-75.50 &
-mpd &
 pipewire &
+mpd &
 
 #$HOME/.scripts/status &
 

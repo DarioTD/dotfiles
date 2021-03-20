@@ -194,14 +194,14 @@ filextype *.djvu
         \ apvlv %f,
 
 " Audio
-filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus
+filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus,*.xwm
        \ {Play using mpv}
        \ mpv %f,
        \ {Play using ffplay}
        \ ffplay -nodisp -autoexit %c,
 "fileviewer *.mp3 mp3info
 "fileviewer *.flac soxi
-fileviewer *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus,*.mid,*.midi
+fileviewer *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus,*.mid,*.midi,*.xwm
        \ mediainfo %c
 
 " Video
