@@ -21,17 +21,13 @@ export PATH="${PATH}:/home/d/.scripts"
 # Aliases
 alias gitdotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 alias gitrootcfg='/usr/bin/git --git-dir=$HOME/.linuxrootcfg.git/ --work-tree=/'
-alias ls='ls --color=always -Ah --group-directories-first'
+alias ls='ls --color=always -Alh --group-directories-first'
 alias diff='diff --color=always'
 alias p='sudo pacman'
 
 #PROMPT='%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%~%b%f %# '
 PROMPT='%F{blue}%B%~/%b%f $ '
 RPROMPT='[%F{yellow}%?%f]'
-
-# Adding powerline to zsh
-#powerline-daemon -q
-#. /usr/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 
 #Fish highlighting
 if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then

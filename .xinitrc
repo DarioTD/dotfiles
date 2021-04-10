@@ -24,16 +24,13 @@ fcitx5 &
 nitrogen --restore &
 #sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
-#fcitx &
 picom &
 #dunst & # Using D-bus
-lxpolkit & # authentication agent
+lxpolkit & # polkit authentication agent
 dwmblocks &
 #redshift -l 5.07:-75.50 &
 pipewire &
 mpd &
-
-#$HOME/.scripts/status &
 
 #exec i3
 #exec bspwm
