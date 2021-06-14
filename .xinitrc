@@ -29,7 +29,7 @@ picom &
 lxpolkit & # polkit authentication agent
 dwmblocks &
 #redshift -l 5.07:-75.50 &
-pipewire &
+dbus-launch --sh-syntax --exit-with-session; pipewire &
 mpd &
 
 #exec i3
