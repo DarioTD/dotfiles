@@ -23,7 +23,7 @@ alias gitdotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME
 alias gitrootcfg='/usr/bin/git --git-dir=$HOME/.linuxrootcfg.git/ --work-tree=/'
 alias ls='ls --color=always -Alh --group-directories-first'
 alias diff='diff --color=always'
-alias p='sudo pacman'
+alias p='doas pacman'
 
 #PROMPT='%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%~%b%f %# '
 PROMPT='%F{blue}%B%~/%b%f $ '

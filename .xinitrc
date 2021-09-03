@@ -19,9 +19,9 @@ export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share
 xrandr --auto
 
 ## Autostart
-setxkbmap latam &
-fcitx5 &
 nitrogen --restore &
+#setxkbmap latam &
+fcitx5 &
 #sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
 sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 picom &
@@ -29,7 +29,7 @@ picom &
 lxpolkit & # polkit authentication agent
 dwmblocks &
 #redshift -l 5.07:-75.50 &
-dbus-launch --sh-syntax --exit-with-session; pipewire &
+pipewire &
 mpd &
 
 #exec i3
