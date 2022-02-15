@@ -5,15 +5,23 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export HISTCONTROL=ignoredups
+set -o vi
+
+# Variables
+export BROWSER="firefox"
+export EDITOR="vim"
+export PATH="${PATH}:$HOME/.local/bin"
+
 # Aliases
 alias gitdotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 alias gitrootcfg='/usr/bin/git --git-dir=$HOME/.linuxrootcfg.git/ --work-tree=/'
-alias ls='ls --color=always -Ah --group-directories-first'
+alias ls='ls --color=always -Alh --group-directories-first'
 alias diff='diff --color=always'
 alias p='sudo pacman'
 
 #PS1='[\u@\h \W]\$ '
-PS1='\W/ \$ '
+#PS1='\W/ \$ '
 
 # Man colored
 export LESS_TERMCAP_mb=$'\e[1;32m'
@@ -38,6 +46,3 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 # Neofetch
 neofetch
-
-export HISTCONTROL=ignoredups
-set -o vi

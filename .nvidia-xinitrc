@@ -18,12 +18,8 @@ xrandr --auto
 
 ## Autostart
 setxkbmap latam &
+nvidia-settings --load-config-only &
 nitrogen --restore &
-#sxhkd -c $HOME/.config/sxhkd/sxhkdrc.bspwm &
-sxhkd -c $HOME/.config/sxhkd/sxhkdrc.dwm &
 
 dwmblocks &
-
-#exec i3
-#exec bspwm
 exec dwm

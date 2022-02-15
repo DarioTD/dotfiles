@@ -16,14 +16,14 @@ compinit
 # Variables
 export BROWSER="firefox"
 export EDITOR="vim"
-export PATH="${PATH}:/home/d/.scripts"
+export PATH="${PATH}:$HOME/.local/bin"
 
 # Aliases
 alias gitdotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 alias gitrootcfg='/usr/bin/git --git-dir=$HOME/.linuxrootcfg.git/ --work-tree=/'
 alias ls='ls --color=always -Alh --group-directories-first'
 alias diff='diff --color=always'
-alias p='doas pacman'
+alias p='sudo pacman'
 
 #PROMPT='%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%~%b%f %# '
 PROMPT='%F{blue}%B%~/%b%f $ '

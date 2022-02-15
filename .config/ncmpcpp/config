@@ -127,7 +127,7 @@ visualizer_spectrum_smooth_look = yes
 ## visualizer look at a larger slice of time, which results in less jumpy
 ## visualizer output.
 #
-#visualizer_spectrum_dft_size = 3
+#visualizer_spectrum_dft_size = 2
 #
 #visualizer_spectrum_gain = 10
 #
@@ -405,7 +405,7 @@ visualizer_spectrum_smooth_look = yes
 #
 #cyclic_scrolling = no
 #
-#lyrics_fetchers = azlyrics, genius, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, zeneszoveg, internet
+lyrics_fetchers = internet, musixmatch, azlyrics, genius, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, zeneszoveg
 #
 #follow_now_playing_lyrics = no
 #

@@ -24,7 +24,7 @@ XF86AudioMute
 
 # Brightness controls
 @XF86MonBrightness{Up,Down}
-	brightnessctl set {+2%,+2%-}
+	brightnessctl set {+2%,2%-}
 
 # Multimedia controls
 XF86Audio{Prev,Next,Play,Stop}
