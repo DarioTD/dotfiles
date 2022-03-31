@@ -19,8 +19,8 @@ export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json:/usr/share
 xrandr --auto
 
 ## Autostart
-#setxkbmap latam &&
-fcitx5 &
+setxkbmap latam &
+#fcitx5 &
 picom --experimental-backends &
 nitrogen --restore &
 #redshift -l 5.07:-75.50 &
