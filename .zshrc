@@ -13,16 +13,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Variables
-export BROWSER="firefox"
-export EDITOR="vim"
-export PATH="${PATH}:$HOME/.local/bin"
-
 # Aliases
 alias gitdotfiles="git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias gitrootcfg="git --git-dir=$HOME/.linuxrootcfg.git/ --work-tree=/"
+alias irssi="irssi --config=$HOME/.config/irssi/config"
 alias ls="ls --color=always --group-directories-first -Alh"
 alias diff="diff --color=always"
+alias ip="ip -c=always"
 alias p="sudo pacman"
 
 PROMPT="%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%~%b%f $ "

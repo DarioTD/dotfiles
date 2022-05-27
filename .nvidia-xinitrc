@@ -20,6 +20,7 @@ xrandr --auto
 setxkbmap latam &
 nvidia-settings --load-config-only &
 nitrogen --restore &
+lxpolkit &
 
 dwmblocks &
 exec dwm

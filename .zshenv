@@ -1,0 +1,6 @@
+# Variables
+export BROWSER="firefox"
+export EDITOR="vim"
+typeset -U path PATH
+path=($HOME/.local/bin $path)
+export PATH

@@ -18,6 +18,7 @@ alias gitdotfiles="git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 alias gitrootcfg="git --git-dir=$HOME/.linuxrootcfg.git/ --work-tree=/"
 alias ls="ls --color=always --group-directories-first -Alh"
 alias diff="diff --color=always"
+alias ip="ip -c=always"
 alias p="sudo pacman"
 
 #PS1="[\u@\h \W]\$ "

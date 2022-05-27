@@ -193,6 +193,11 @@ filextype *.djvu
         \ {View in apvlv}
         \ apvlv %f,
 
+" Epub
+filextype *.epub
+        \ {View in zathura}
+        \ zathura %f,
+
 " Audio
 filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus,*.xwm
        \ {Play using mpv}
@@ -242,6 +247,9 @@ filetype *.[1-8] man ./%c
 fileviewer *.[1-8] man ./%c | col -b
 
 " Images
+filextype *.webp
+       \ {View in surf}
+       \ surf %f,
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.ico
        \ {View in sxiv}
        \ sxiv -p %f,
@@ -253,6 +261,16 @@ fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm,*.ico
        \ mediainfo %c,
        \ img2txt %c,
        \ identify %f,
+
+" Edit in GIMP
+filextype *.xcf
+       \ {Edit in GIMP}
+       \ gimp %f,
+
+" Edit in Krita
+filextype *.kra
+       \ {Edit in Krita}
+       \ krita %f,
 
 " OpenRaster
 filextype *.ora
@@ -353,9 +371,14 @@ filextype *.pro qtcreator %f &
 " Directories
 filextype */
        \ {View in pcmanfm}
-       \ pcmanfm %f &,
+       \ pcmanfm-qt %f &,
        \ {View in thunar}
        \ Thunar %f &,
+
+" Schematics
+filextype *.brb,*.fz
+       \ {View in openboardview}
+       \ openboardview %f &,
 
 " Syntax highlighting in preview
 "
