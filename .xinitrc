@@ -29,4 +29,4 @@ pipewire &
 mpd &
 
 dwmblocks &
-exec dwm
+exec dbus-launch --exit-with-session dwm
